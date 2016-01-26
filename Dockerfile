@@ -1,5 +1,8 @@
-FROM node:argon
 
-# Create app directory
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
+FROM node:slim
+
+COPY . /docker_setup/
+WORKDIR /docker_setup/
+RUN npm install 
+EXPOSE 8080
+CMD [ "npm", "start"]

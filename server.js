@@ -11,7 +11,7 @@ var app        = express();                 // define our app using express
 var bodyParser = require('body-parser');
 //mongo mongo
 var mongoose   = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/myappdatabase'); // connect to our database
+mongoose.connect('mongodb://150.107.152.122:27017/myappdatabase'); // connect to our database
 
 //add table model
 var Table = require('./app/models/table');
