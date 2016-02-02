@@ -1,9 +1,9 @@
 db:
   image: mongo
-  ports:
-    - 27017:27017
 web:
   build: .
+  volumes:
+  - /mnt/shared-volume:/path/a
   ports:
     - 8080:8080
   links:
