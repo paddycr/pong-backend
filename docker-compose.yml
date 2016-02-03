@@ -1,5 +1,11 @@
 db:
   image: mongo
+
+db_seed:
+  build: ./seed_data
+  links:
+    - db
+
 web:
   build: .
   volumes:
