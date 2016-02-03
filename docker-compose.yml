@@ -3,7 +3,7 @@ db:
 web:
   build: .
   volumes:
-  - /mnt/shared-volume:/path/a
+  - .:/usr/app/src
   ports:
     - 8080:8080
   links:
