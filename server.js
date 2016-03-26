@@ -1,7 +1,3 @@
-//https://scotch.io/tutorials/build-a-restful-api-using-node-and-express-4
-
-// server.js
-
 // BASE SETUP
 // =============================================================================
 
@@ -9,6 +5,7 @@
 var express    = require('express');        // call express
 var app        = express();                 // define our app using express
 var bodyParser = require('body-parser');
+var exports = module.exports = {};
 //mongo mongo
 var mongoose   = require('mongoose');
 mongoose.connect('mongodb://pongbackend_db_1:27017/myappdatabase'); // connect to our database
@@ -80,5 +77,15 @@ app.use('/api', router);
 
 // START THE SERVER
 // =============================================================================
-app.listen(port);
-console.log('Magic happens on port ' + port); 
+var server = app.listen(port, function(){
+  console.log ('Magie is happening on port ' + port);
+});
+console.log('2Magic is happening on port ' + port);
+
+
+//exports.closeServer = function(){
+//  server.close();
+//}; 
+
+
+
