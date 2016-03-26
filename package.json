@@ -1,6 +1,12 @@
 {
-  "name": "pong-backend",
+  "name": "pong-backend-api",
+  "version": "0.0.1",
+  "description": "backend api of ionic app",
+  "author": "paddycr",
   "main": "server.js",
+  "scripts": {
+    "test": "./node_modules/.bin/jasmine-node spec"
+  },
   "dependencies": {
     "express": "~4.0.0",
     "morgan": "~1.0.0",
