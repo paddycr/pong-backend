@@ -5,7 +5,8 @@
     "express": "~4.0.0",
     "morgan": "~1.0.0",
     "body-parser": "~1.0.1",
-    "mongoose": "~3.6.13"
+    "mongoose": "~3.6.13",
+    "request": "~2.69.0"
   },
   "devDependencies": {
     "jasmine-node": "~1.14.5"
