@@ -2,4 +2,9 @@ build:
   image: node
   commands: 
     - npm install
+    - npm start
     - npm test
+
+compose:
+  db:
+    image: mongo
