@@ -2,7 +2,7 @@ build:
   image: node
   commands: 
     - npm install
-    - npm start & npm test
+    - npm test
 
 compose:
   db:
