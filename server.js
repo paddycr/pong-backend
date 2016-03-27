@@ -80,12 +80,11 @@ app.use('/api', router);
 var server = app.listen(port, function(){
   console.log ('Magie is happening on port ' + port);
 });
-console.log('2Magic is happening on port ' + port);
 
 
-//exports.closeServer = function(){
-//  server.close();
-//}; 
+exports.closeServer = function(){
+  server.close();
+}; 
 
 
 
