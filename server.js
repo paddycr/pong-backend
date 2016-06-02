@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 var exports = module.exports = {};
 //mongo mongo
 var mongoose   = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/myappdatabase'); // connect to our database
+mongoose.connect('mongodb://db:27017/myappdatabase'); // connect to our database
 
 //add table model
 var Table = require('./app/models/table');
